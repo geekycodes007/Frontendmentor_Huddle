@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--primary-color: hsl(257, 40%, 49%);
+--secondary-color: hsl(300, 69%, 71%);
+--text-color:#fff;
+}
+body{
+    background-color: var(--primary-color);
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin: 1rem 0rem;
+    opacity: 0.85;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    padding: 0.8rem 3rem;
+    border-radius: 30px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    color:var(--text-color);
+}
+.container{
+    padding: 1rem 5rem;
+}
+header img{
+    height: 3rem;
+    width: auto;
+}
+.header-content{
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+}
+.header-content .left{
+    flex: 1;
+}
+.header-content .left img{
+    width: 100%;
+   object-fit: contain;
+}
+.header-content .right{
+    flex: 1 ;   
+}
+.header-content .right .text{
+    width: 60%;
+    margin: 0 auto;  
+}
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    font-size: 20px;
+    padding:8px 10px;
+    margin: 0 0.5rem;
+    color: var(--text-color);
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+a:hover{
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+@media screen and (max-width:900px) {
+    .container{
+        padding: 1rem 3rem;
+    }
+    header img{
+        height: 2.5rem;
+    }
+    .header-content{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .header-content .right .text{
+        width: 100%;
+        text-align: center; 
+        margin-top: 1.5rem;
+        margin-left:0;
+    }
+    .social-icons{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:400px){
+    .container{
+        padding: 1rem 1rem;
+    }
+}
+ 
